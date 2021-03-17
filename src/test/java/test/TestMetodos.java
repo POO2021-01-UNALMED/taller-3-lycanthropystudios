@@ -26,7 +26,7 @@ public class TestMetodos {
 		
 		tv1.setCanal(100);
 		tv1.canalDown();
-		
+
 		TV tv2 =  new TV(marca, false);
 		Control control =  new Control();
 		control.enlazar(tv2);
@@ -36,7 +36,6 @@ public class TestMetodos {
 		
 		TV tv3 =  new TV(marca, false);
 		tv2.setCanal(121);
-		
 		boolean ok = false;
 		
 		if(tv1.getCanal() == 99 && tv2.getCanal() == 2 && tv3.getCanal() == 1) {
@@ -65,7 +64,6 @@ public class TestMetodos {
 		tv3.volumenUp();
 		
 		boolean ok = false;
-		
 		if(tv1.getVolumen() == 6 && tv2.getVolumen() == 2 && tv3.getVolumen() == 7) {
 			ok = true;
 		}

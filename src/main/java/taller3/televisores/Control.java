@@ -10,29 +10,17 @@ public class Control {
         this.tv.turnOn();
     }
     public void canalUp(){
-        int canal = this.tv.getCanal();
-        if (canal >= 0 && canal < 120 && this.tv.getEstado() == true){
-            this.tv.canalUp();
-        }
+        this.tv.canalUp();
     }
     public void canalDown(){
-        int canal = this.tv.getCanal();
-        if (canal >= 1 && canal <= 120 && this.tv.getEstado() == true){
-            this.tv.canalDown();
-        }
+        this.tv.canalDown();
     }
 
     public void volumenUp(){
-        int vol = this.tv.getVolumen();
-        if (vol >= 0 && vol < 7 && this.tv.getEstado() == true){
-            this.tv.volumenUp();
-        }
+        this.tv.volumenUp();
     }
     public void volumenDown(){
-        int vol = this.tv.getVolumen();
-        if (vol >= 1 && vol <= 120 && this.tv.getEstado() == true){
-            this.tv.volumenDown();
-        }
+        this.tv.volumenDown();
     }
 
     public void setCanal(int canal){
